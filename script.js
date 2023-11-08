@@ -18,10 +18,10 @@ const createBooking = function (
   bookings.push(booking);
 };
 
-createBooking("LH123");
-createBooking("LH123", 2, 800);
-createBooking("LH123", 2);
-createBooking("LH123", undefined, 1000);
+createBooking("LH123"); // Object { flightNum: "LH123", numPassengers: 1, price: 199 }
+createBooking("LH123", 2, 800); // Object { flightNum: "LH123", numPassengers: 2, price: 800 }
+createBooking("LH123", 2); // Object { flightNum: "LH123", numPassengers: 2, price: 398 }
+createBooking("LH123", undefined, 1000); // Object { flightNum: "LH123", numPassengers: 1, price: 1000 }
 
 /*************************** How passing arguments works: value vs. reference **********************/
 
