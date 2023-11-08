@@ -44,7 +44,7 @@ const checkIn = function (flightNum, passenger) {
   }
 };
 
-checkIn(flight, jonas);
+checkIn(flight, jonas); // check in!
 console.log(flight); // LH234
 console.log(jonas); // Object { name: "Mr. Jonas Schmedtmann", passport: 24739479284 }
 
@@ -59,7 +59,7 @@ const newPassport = function (person) {
 };
 
 newPassport(jonas);
-checkIn(flight, jonas);
+checkIn(flight, jonas); // wrong passport!
 
 // clearify...
 // JavaScript does not have pass by reference: (even it works like it)
