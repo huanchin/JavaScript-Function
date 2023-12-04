@@ -171,8 +171,8 @@ const eurowings = {
 
 const book = lufthansa.book;
 
-// Does NOT work: book is now regular function call, not a method
-// book(23, "Sarah Williams"); // Error: this is not defined
+// Does NOT work: book is now regular function call, not a method -> in regular function call, <this> key word is not defined
+// book(23, "Sarah Williams"); // Error: <this> is not defined
 
 // call method
 book.call(eurowings, 23, "Sarah Williams"); // Sarah Williams booked a seat on Eurowings flight EW23
